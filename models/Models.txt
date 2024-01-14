@@ -1,0 +1,2 @@
+You can find compatible models at https://huggingface.co/ggerganov/whisper.cpp/tree/main
+Place the downloaded model in the models folder and change the Model variable in Main.py to match the model name.

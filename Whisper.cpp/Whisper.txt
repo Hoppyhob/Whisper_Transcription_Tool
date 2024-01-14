@@ -1,0 +1,8 @@
+You can find the whisper.cpp release at https://github.com/ggerganov/whisper.cpp/releases
+Add whisper.dll and main.exe to the Whisper.cpp folder.
+
+Instructions to build whisper.cpp on windows with Cuda
+https://github.com/ggerganov/whisper.cpp/issues/878#issuecomment-1586192170
+
+Fixing Cuda Compile issues if you have Build tools installed
+https://stackoverflow.com/questions/56636714/cuda-compile-problems-on-windows-cmake-error-no-cuda-toolset-found
