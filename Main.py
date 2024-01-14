@@ -1,4 +1,3 @@
-#!.\venv\Scripts\python.exe
 import os, json, fnmatch, subprocess, tempfile
 from datetime import datetime
 
@@ -67,7 +66,7 @@ if (os.path.exists(Manifest)):
     with open(Manifest, "r") as input:
         Audios = json.load(input)
     #Do not summarize requirements.txt
-    if(not fnmatch(Audios["Files"].values(), "requirements.txt")):
+    if(len(fnmatch.filter(list(Audios["Files"].values()), "requirements.txt")) < 1):
        Audios["Files"]["-1"] = "requirements.txt"
 
 def W_Manifest(AudioFile):
